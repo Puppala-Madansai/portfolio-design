@@ -45,6 +45,12 @@
       letter-spacing: 2px;
       text-shadow: 0 0 8px #0ff7;
       font-size: 2rem;
+      transition: 600ms;
+      
+    }
+    header h1:hover {
+      transform: scale(1.2);
+      
     }
     nav a {
       color: white;
@@ -54,6 +60,7 @@
       position: relative;
       transition: color 0.3s;
       padding-bottom: 2px;
+      
     }
     nav a::after {
       content: '';
@@ -101,7 +108,7 @@
       box-shadow: 0 8px 40px rgba(0,255,255,0.18), 0 4px 16px rgba(0,0,0,0.35);
     }
     .glass-card h2 {
-      color: #0ff;
+      color: white;
       margin-bottom: 1rem;
       font-size: 2rem;
       font-weight: 700;
@@ -185,6 +192,35 @@
       color: #0ff;
       font-weight: 500;
     }
+    
+    .phone-icon {
+      color:lightgreen !important;
+    }
+    .phone-icon:hover {
+      color: green !important;
+      text-shadow: 0 0 8px #ff3b3b77;
+    }
+    .mail-icon {
+      color:red !important;
+    }
+    .mail-icon:hover {
+      color: red !important;
+      text-shadow: 0 0 8px #ff3b3b77;
+    }
+    .lin-icon {
+      color:blue !important;
+    }
+    .lin-icon:hover {
+      color: blue !important;
+      text-shadow: 0 0 8px #ff3b3b77;
+    }
+    .git-icon {
+      color:white !important;
+    }
+    .git-icon:hover {
+      color: white !important;
+      text-shadow: 0 0 8px #ff3b3b77;
+    }
     footer {
       text-align: center;
       padding: 2rem;
@@ -247,13 +283,13 @@
     <div class="glass-card">
       <h2>Contact</h2>
       <div class="contact-icons">
-        <a href="mailto:you@example.com" title="Email"><i class="fas fa-envelope"></i></a>
-        <a href="tel:+911234567890" title="Phone"><i class="fas fa-phone"></i></a>
-        <a href="https://github.com/" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
-        <a href="https://linkedin.com/" target="_blank" rel="noopener" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:puppalamadansai1@gmail.com" title="Email" class="mail-icon"><i class="fas fa-envelope"></i></a>
+        <a href="tel:+91 9398859935" title="Phone" class="phone-icon"><i class="fas fa-phone"></i></a>
+        <a href="https://github.com/" target="_blank" rel="noopener" title="GitHub" class="git-icon"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/" target="_blank" rel="noopener" title="LinkedIn" class="lin-icon"><i class="fab fa-linkedin"></i></a>
       </div>
-      <p>Email: <a href="mailto:you@example.com" class="contact-email">you@example.com</a></p>
-      <p>Phone: <span class="contact-phone">+91 1234567890</span></p>
+      <p>Email: <a href="mailto:puppalamadansai1@gmail.com" class="contact-email">puppalamadansai1@gmail.com</a></p>
+      <p>Phone: <span class="contact-phone">+91 9398859935</span></p>
     </div>
   </section>
 
