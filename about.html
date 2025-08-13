@@ -91,6 +91,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
   }
+  /*header styles */
   header {
     position: fixed;
     top: 0; left: 0;
@@ -112,7 +113,13 @@
     letter-spacing: 2px;
     text-shadow: 0 0 8px #0ff7;
     font-size: 2rem;
+    transition: 600ms;
   }
+  header h1:hover {
+      transform: scale(1.2);
+      
+    }
+    /* Navigation styles */
   nav a {
     color: white;
     margin-left: 28px;
@@ -186,6 +193,7 @@
     color: #ddd;
     font-size: 1.1rem;
   }
+  /* Footer section */
   footer {
     text-align: center;
     padding: 2rem;
@@ -201,7 +209,46 @@
     header { padding: 1rem 4%; }
     .glass-card { padding: 1.5rem 1rem; }
   }
+/*education and experience cards*/
+.about-extra {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
 
+.about-card {
+  flex: 1 1 300px;
+  padding: 2rem;
+}
+
+.about-card h1 {
+  color: #0ff;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.about-card h4 {
+  color: #0ff;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.about-card ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.about-card ul li {
+  margin-bottom: 0.5rem;
+  color: #e0e0e0;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 700px) {
+  .about-extra {
+    flex-direction: column;
+  }
+}
   </style> 
 </head>
 <body>
@@ -209,7 +256,7 @@
   <header>
     <h1>Madan Sai</h1>
     <nav>
-      <a href="main.html">Home</a>
+      <a href="index.html">Home</a>
       <a href="about.html" class="active">About</a>
       <a href="projects.html">Projects</a>
       <a href="contact.html">Contact</a>
@@ -231,6 +278,27 @@
       <p>🎨 UI/UX Design (Figma, Adobe XD)</p>
       <p>🌐 Responsive & Modern Web Design</p>
     </div>
+  
+     <!-- Education and Experience Cards -->
+  <div class="about-extra">
+    <div class="glass-card about-card">
+      <h1>Education</h1>
+      <h4>Acadamic Background</h4>
+      <ul>
+        <li>B.Tech in Computer Science, Parul University (2025)</li>
+        <li>Intermediate , MPC, Sri Vikas Junior College (2021)</li>
+        <li>High School, ZPPS School (2019)</li>
+      </ul>
+    </div>
+
+    <div class="glass-card about-card">
+      <h1>Experience</h1>
+      <ul>
+        <li>Web Developer Intern at Company A (2022)</li>
+        <li>Freelance Web Developer (2021–Present)</li>
+      </ul>
+    </div>
+  </div>
   </main>
 
   <footer>
@@ -239,3 +307,6 @@
 
 </body>
 </html>
+
+
+
