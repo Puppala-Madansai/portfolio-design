@@ -1,6 +1,3 @@
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -52,9 +49,8 @@
     transition: 600ms;
   }
   header h1:hover {
-      transform: scale(1.2);
-      
-    }
+    transform: scale(1.2);
+  }
   nav a {
     color: white;
     margin-left: 28px;
@@ -170,34 +166,38 @@
     margin-top: 2rem;
     letter-spacing: 1px;
   }
-  .social-icons {
-    margin-top: 1rem;
-  }
+  /* Social icon colors */
+  .instagram-icon { color: #E4405F; }
+  .instagram-icon:hover { color: #C13584; text-shadow: 0 0 12px #E4405F88; }
+
+  .whatsapp-icon { color: #25D366; }
+  .whatsapp-icon:hover { color: #128C7E; text-shadow: 0 0 12px #25D36688; }
+
+  .email-icon { color: #D44638; }
+  .email-icon:hover { color: #C53727; text-shadow: 0 0 12px #D4463888; }
+
   .social-icons a {
-    color: #0ff;
     margin: 0 14px;
     font-size: 1.7rem;
-    transition: color 0.3s, transform 0.3s;
-    text-shadow: 0 0 8px #0ff2;
+    transition: transform 0.3s;
   }
   .social-icons a:hover {
-    color: #fff;
     transform: scale(1.2);
-    text-shadow: 0 0 12px #0ff7;
   }
+
   @media (max-width: 700px) {
     main { padding: 8rem 4% 4rem; }
     header { padding: 1rem 4%; }
     .glass-card { padding: 1.5rem 1rem; }
   }
-</style>
+  </style>
 </head>
 <body>
 
   <header>
     <h1>Madan Sai</h1>
     <nav>
-       <a href="index.html">Home</a>
+      <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="projects.html">Projects</a>
       <a href="contact.html" class="active">Contact</a>
@@ -220,9 +220,15 @@
   <footer>
     &copy; 2025 Madan Sai. All rights reserved.
     <div class="social-icons">
-      <a href="https://instagram.com/madan_macha_3" target="_blank" rel="noopener" title="Instagram"><i class="fab fa-instagram"></i></a>
-      <a href="https://wa.me/9398859935" target="_blank" rel="noopener" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-      <a href="mailto:puppalamadansai1@gmail.com" title="Send Email"><i class="fas fa-envelope"></i></a>
+      <a href="https://instagram.com/madan_macha_3" target="_blank" rel="noopener" title="Instagram" class="instagram-icon">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://wa.me/9398859935" target="_blank" rel="noopener" title="WhatsApp" class="whatsapp-icon">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      <a href="mailto:puppalamadansai1@gmail.com" title="Send Email" class="email-icon">
+        <i class="fas fa-envelope"></i>
+      </a>
     </div>
   </footer>
 
